@@ -2,6 +2,7 @@
 var tableData = data;
 ufoData(tableData);
 
+// Assign function to data to store for loop
 function ufoData(data)
 {
 
@@ -36,9 +37,7 @@ submit.on("click", function() {
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
 
-  console.log(inputValue);
-  console.log(tableData);
-
+  // Assign variable for filtered search
   var filteredData = tableData.filter(tableData => tableData.datetime === inputValue);
 
   console.log(filteredData);
